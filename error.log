@@ -1,0 +1,4 @@
+[Thu Apr 28 15:11:45.667720 2016] [authz_core:error] [pid 10245] [client 127.0.0.1:45270] AH01630: client denied by server configuration: /home/dev49/www/testyii.loc/
+[Thu Apr 28 15:11:45.997928 2016] [authz_core:error] [pid 10245] [client 127.0.0.1:45270] AH01630: client denied by server configuration: /home/dev49/www/testyii.loc/favicon.ico, referer: http://testyii.loc/
+[Thu Apr 28 15:12:38.601723 2016] [authz_core:error] [pid 10247] [client 127.0.0.1:45272] AH01630: client denied by server configuration: /home/dev49/www/testyii.loc/
+[Thu Apr 28 15:12:38.718897 2016] [authz_core:error] [pid 10247] [client 127.0.0.1:45272] AH01630: client denied by server configuration: /home/dev49/www/testyii.loc/favicon.ico, referer: http://testyii.loc/
