@@ -2,22 +2,21 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use yii\widgets\ListView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\CountriesSearch */
+/* @var $searchModel app\models\CitiesSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Countries';
+$this->title = 'Cities';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="countries-index">
+<div class="cities-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Countries', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Cities', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -26,7 +25,13 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'country_name',
+            [
+                'class' => 'common\column\MyColumn',
+                'attribute' => 'city_name',
+                'label' => 'City Name',
+                'format' => 'html'
+            ],
+            'country.country_name',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
